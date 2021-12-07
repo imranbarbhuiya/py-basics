@@ -31,7 +31,9 @@ def play():
             guess = int(input("Your guess: "))
         except ValueError:
             print("\nPlease enter a valid number.")
-            tries += 1
+            continue
+        if guess < 1 or guess > 100:
+            print("\nThe number must be between 1 and 100.")
             continue
         if guess < number:
             print("Your guess is too low.")
