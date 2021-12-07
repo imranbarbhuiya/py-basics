@@ -1,0 +1,5 @@
+numbers = input("Enter the list of numbers\n").split()
+numbers = list(map(int, numbers))
+sum = sum(numbers)
+average = sum/len(numbers)
+print(f"Sum is {sum} \naverage is {average}")
